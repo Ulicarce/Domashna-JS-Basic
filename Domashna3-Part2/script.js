@@ -3,10 +3,31 @@ function sayHello(){
 }
 sayHello();
 
-let input = prompt("Please write dog's age");
-let numberInput = parseInt(input);
-console.log("Human year is:",numberInput / 7);
+function calculateHumanAge(){
+ let inputAge = prompt("Enter dog age")
+ let numberInputAge = parseInt(inputAge);
+ let humanAge = numberInputAge / 7;
 
-let input1 = prompt("Please write Human year");
-let numberInput1 = parseInt(input1);
-console.log("Dog's year is:",7 * numberInput1);
+ if (inputAge >  0 ){
+  console.log(`The human has ${humanAge}years`)
+ }
+  else
+  (`Please enter the dog age`)
+ }
+
+
+
+function calculateDogAge(){
+ let inputHumanAge = prompt("Enter human age")
+ let numberInputHumanAge = parseInt(inputHumanAge)
+ let dogAge = numberInputHumanAge * 7;
+  if (dogAge > 0){
+  console.log(`The dog has ${dogAge}years`)
+  }
+  else
+  (`Please enter the human age`)
+ }
+
+ // calculateHumanAge();
+ calculateDogAge();
+
